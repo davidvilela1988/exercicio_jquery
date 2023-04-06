@@ -8,6 +8,6 @@ $(document).ready(function () {
     $("#tasks").val("");
   });
   $("ul").on("click", "li", function () {
-    $("p").css("text-decoration", "line-through");
+    $(this).find("p").css("text-decoration", "line-through");
   });
 });
